@@ -1,0 +1,34 @@
+Polimorfismo é o princípio pelo qual duas ou mais classes derivadas
+  de uma mesma superclasse podem invocar métodos que têm a mesma
+  assinatura mas comportamentos distintos, especializados para cada
+  classe derivada, usando uma referência do tipo da superclasse ou
+  interface implementada por ela, e a invocação do método sobre
+  essa referência executa o comportamento especializado da classe
+  derivada específica.
+
+É a possibilidade de utilizar um método de uma classe pai de uma maneira diferente,
+  fazendo pequenos ajustes para se adequar ao objeto filho.
+
+Exemplo em js:
+
+function Animal (nome) {
+  this.nome = nome;
+
+  falar() {
+    console.log(`${this.nome} emite um barulho.`);
+  }
+}
+
+class Cachorro extends Animal {
+  falar() {
+    console.log(`${this.nome} latidos.`);
+  }
+}
+
+let animal = new Animal('Animal');
+
+animal.falar(); // Animal emite um barulho.
+
+let cachorro = new Cachorro('Cachorro');
+
+cachorro.falar(); // Cachorro latidos.

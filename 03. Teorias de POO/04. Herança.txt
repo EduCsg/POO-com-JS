@@ -1,0 +1,22 @@
+Quando um objeto deriva de uma outra classe
+
+A classe filha herda todos os métodos e propriedades da
+  classe pai e mais as propriedades dela própria
+
+A classe filha pode ter métodos e propriedades que a classe
+  pai não tem
+
+A classe filha pode ter métodos e propriedades com o mesmo
+  nome da classe pai, neste caso, o método da classe filha
+  sobrescreve o método da classe pai
+
+Isso serve para que você possa criar classes com comportamentos
+  semelhantes, mas para objetivos diferentes
+
+Por exemplo
+
+  - Um item eletrônico pode ser utilizado para
+    Telefones ou Auto Falantes
+
+  - Auto Falantes, não teriam tela, por exemplo
+  - Telefones, não teriam alto falantes, por exemplo

@@ -1,0 +1,121 @@
+Os objetos na programação são uma representação "Física" (ou clara) de uma Classe,
+onde a Classe seria o "Esqueleto" e o Objeto, o "Objeto" formado a partir daquele esqueleto.
+
+É fundamental ter o conhecimento de uma Classe para entender a Orientação a Objetos.
+
+Basicamente falando, a Classe se trata do "Formato" do Objeto
+  Por exemplo, um objeto "Computador" possui as propriedades
+    Processador
+    Memória RAM
+    Fonte
+    Armazenamento
+    LigarComputador() {
+      // Código para ligar o computador
+    }
+
+  Um objeto gerado com base nessa classe "Computador" também vai possuir
+    as mesmas propriedades, entretanto, alteradas de acordo com cada um dos computadores.
+
+  - Objeto Computador1
+    - AMD Ryzen 5   (Processador)
+    - 16gb          (Memória RAM)
+    - 600w          (Fonte)
+    - 1tb           (Armazenamento)
+
+  - Objeto Computador2
+    - Intel i7      (Processador)
+    - 20gb          (Memória RAM)
+    - 600w          (Fonte)
+    - 1tb           (Armazenamento)
+
+  E assim sucessivamente.
+
+  Dentro dos objetos, além das propriedades é possível também aderir métodos (Funções),
+    que seriam as ações de cada objeto. Como por exemplo "LigarComputador()", que seria
+    incluso dentro da CLASSE de Computador
+
+  Objeto Computador1
+    AMD Ryzen 5   (Processador)
+    16gb          (Memória RAM)
+    600w          (Fonte)
+    1tb           (Armazenamento)
+    LigarComputador() {
+      // Código para ligar o computador
+    }
+
+
+  Dentro do JavaScript é possível gerar objetos sem a necessidade de uma classe,
+    porém, é recomendado que se utilize uma classe para gerar os objetos.
+
+  Para criar uma classe, utiliza-se a palavra reservada "class" seguida do nome da classe
+    e dentro das chaves, as propriedades e métodos da classe. Ou, no caso do
+    JavaScript, a class pode ser gerada através de uma função.
+  
+  Exemplo:
+
+  class Computador {
+    constructor(processador, memoriaRam, fonte, armazenamento) {
+      this.processador = processador;
+      this.memoriaRam = memoriaRam;
+      this.fonte = fonte;
+      this.armazenamento = armazenamento;
+    }
+
+    ligarComputador() {
+      // Código para ligar o computador
+    }
+  }
+
+  const computador1 = new Computador('AMD Ryzen 5', '16gb', '600w', '1tb');
+  const computador2 = new Computador('Intel i7', '20gb', '600w', '1tb');
+
+  console.log(computador1);
+      Computador {
+        processador: 'AMD Ryzen 5',
+        memoriaRam: '16gb',
+        fonte: '600w',
+        armazenamento: '1tb'
+      }
+
+  console.log(computador2);
+      Computador {
+        processador: 'Intel i7',
+        memoriaRam: '20gb',
+        fonte: '600w',
+        armazenamento: '1tb'
+      }
+
+  Para acessar as propriedades ou métodos de um objeto, utiliza-se o "." (ponto)
+    seguido do nome da propriedade.
+
+  console.log(computador1.processador); // Saída: AMD Ryzen 5
+  console.log(computador2.processador); // Saída: Intel i7
+
+
+  Para criar uma classe através de uma função, utiliza-se a palavra reservada "function"
+    seguida do nome da classe e dentro das chaves, as propriedades e métodos da classe.
+
+  Exemplo:
+
+  function Computador(processador, memoriaRam, fonte, armazenamento) {
+    this.processador = processador;
+    this.memoriaRam = memoriaRam;
+    this.fonte = fonte;
+    this.armazenamento = armazenamento;
+
+    this.ligarComputador = function() {
+      // Código para ligar o computador
+    }
+  }
+
+  const computador1 = new Computador('AMD Ryzen 5', '16gb', '600w', '1tb');
+
+  console.log(computador1);
+      
+      Computador {
+        processador: 'AMD Ryzen 5',
+        memoriaRam: '16gb',
+        fonte: '600w',
+        armazenamento: '1tb',
+        ligarComputador: [Function (anonymous)]
+      }

@@ -1,0 +1,15 @@
+Também conhecido como Composição (composition)
+
+Se trata do ato de combinar classes menores para gerar uma classe maior.
+  Por exemplo, uma classe pode ser composta por outras classes
+  menores, ou um objeto pode ser composto por outros objetos menores
+
+Quando usar: Quando uma classe precisa de outra classe para executar
+  sua ação, ou seja, quando uma classe depende de outra classe
+
+Exemplo: Um carro depende de várias partes para funcionar, como motor,
+  rodas, portas, etc. Se o carro não tiver uma dessas partes, ele não
+  funcionará
+
+Vantagens: Reuso de código, flexibilidade e desempenho
+Desvantagens: Se a classe principal for destruída, as outras classes

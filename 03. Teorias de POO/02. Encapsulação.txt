@@ -1,0 +1,15 @@
+Quando um objeto contém, ou encapsula, dados ou meios de fazer algo
+  com os dados utilizando métodos, esse objeto é dito ter um comportamento próprio.
+
+O encapsulamento, ou ocultação de informação, é uma das características mais
+  importantes da programação orientada a objetos. Ela permite que os dados sejam
+  acessados somente por meio de métodos, que podem garantir que esses dados
+  estejam sempre em um estado consistente.
+  
+O javascript não possui modificadores de acesso, como o private, protected e public,
+  como em outras linguagens. Porém, é possível simular o encapsulamento utilizando
+  closures e funções construtoras.
+
+É utilizado para garantir que os dados só serão alterados dentro da própria classe.
+  Para isso, é necessário criar métodos que irão acessar os atributos privados.
+  Esses métodos são chamados de getters e setters.
