@@ -1,0 +1,8 @@
+Os objetos built-ins do JavaScript são objetos pré-definidos que são herdados do objeto Object.
+
+Os objetos built-ins do JavaScript incluem
+  String, Number, Boolean, Object, Function, Array, Date, RegExp, Error,
+  Map, Set, WeakMap, WeakSet, Proxy, Reflect, Promise, Math e JSON.
+
+Os objetos built-ins do JavaScript não podem ser usados ​​para criar novos objetos.
+
