@@ -1,0 +1,16 @@
+As classes foram introduzidas ao JS apenas na versão do ES6, e são uma
+  forma de criar objetos com base em um modelo pré-definido, ou seja,
+  uma classe é um modelo para a criação de objetos. A classe é um molde
+  para a criação de objetos, e um objeto é uma instância de uma classe.
+
+As classes no JS apenas simulam o que são classes reais em outras linguagens,
+  porém por baixo dos panos tudo continua sendo protótipos e functions.
+
+A Class é uma sintaxe sugar, ou seja, uma forma mais simples de escrever
+  algo que já existe por baixo dos panos.
+
+Além disso, as Classes são o pilar principal da Programação Orientada a
+  Objetos. Resumidamente, POO se trata apenas de Classes e Objetos.
+
+Até agora durante o curso os métodos e funções vistos são até o ES5, porém
+  a partir do ES6 temos as classes.
