@@ -1,0 +1,9 @@
+O javascript trata-se de uma linguagem baseada em prototypes
+  e não em classes, como em Java, por exemplo.
+
+Todos os objetos do JavaScript herdam propriedades e métodos
+  do prototype de Object, como foi visto na seção dos
+  Built-In Objects.
+
+Por esses motivos, TUDO no Javascript tem um pai, ou seja,
+  um prototype do qual ele é herdado.
