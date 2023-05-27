@@ -1,0 +1,14 @@
+A herança em Javascript se trata de um mecanismo
+  onde um objeto pode acessar as propriedades e
+  métodos de outro objeto através da cadeia de
+  protótipos.
+
+As propriedades e métodos do Objeto Pai são repassados
+  aos objetos Filho dele.
+
+Isso é muito útil para reutilização e organização
+  de código.
+
+A herança, no Javascript, é baseada em protótipos.
+  Devido à isso, pode ser aplicada via Prototype
+  Chain.
