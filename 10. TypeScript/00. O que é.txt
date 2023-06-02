@@ -1,0 +1,33 @@
+O TS é um Superset do JS, ou seja, ele é uma linguagem que possui todas as
+  funcionalidades do JS e mais algumas funcionalidades extras.
+  (assim como o C++ é do C)
+
+Não é específicamente uma linguagem nova, entretanto, muitas pessoas entendem
+  como uma linguagem nova, pois ela é compilada para JS e possui algumas
+  funcionalidades que o JS não possui.
+
+Traz funcionalidades como
+  - Types
+  - Interfaces
+  - Decorators
+  - Generics
+
+Através dele é possível evitar diversos erros de compilação, por exemplo
+  com o Typescript se torna possível criar uma função que recebe um parâmetro
+  do tipo string e retorna um número, e caso seja passado um parâmetro de qualquer
+  tipo diferente de string, o editor irá acusar um erro.
+
+Isso acaba tornando o Typescript mais confiável e seguro do que o JS, pois
+  o JS não possui esse tipo de verificação.
+
+Por esse mesmo motivo, não é possível encontrar erros durante a compilação do TS,
+  pois o próprio editor de código irá acusar o erro antes mesmo de compilar.
+
+Além disso, também é integrado com diversas tecnologias como o React, Angular,
+  Vue, etc.
+
+O Typescript não é uma linguagem executada, apesar de digitarmos em um arquivo
+  .ts, ele é compilado para JS antes de ser executado, ou seja, o código Typescript
+  é convertido para JS e então é executado.
+
+Para compilar o TS para JS, basta rodar no terminal o comando "tsc nomeDoArquivo.ts" 
