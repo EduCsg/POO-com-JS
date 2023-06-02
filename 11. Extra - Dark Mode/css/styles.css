@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: #eceff1;
+	transition: 0.3s;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.fa {
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eceff1;
+	box-shadow: 0.5px 0.5px 10px 0.5px #000;
+	padding: 1rem 2rem;
+	position: relative;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	margin-top: 4rem;
+	display: flex;
+	width: 60%;
+	padding: 60px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+	padding: 2rem;
+	width: 50%;
+	position: relative;
+	background-color: #eff7fc;
+	overflow: visible;
+}
+
+.card-image span {
+	font-size: 6rem;
+	font-weight: 900;
+}
+
+.card img {
+	width: 130%;
+	transform: rotate(-25deg);
+	position: absolute;
+	right: -1.2rem;
+	top: 11rem;
+}
+
+.card-details {
+	width: 50%;
+	padding: 2rem;
+}
+
+.card-details h2 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.subtitle {
+	color: #444;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	transition: 200ms ease-in-out;
+}
+
+.description {
+	line-height: 1.6rem;
+	margin-bottom: 2rem;
+}
+
+.price-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.price {
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+.btn {
+	background-color: #000;
+	width: 7rem;
+	height: 3rem;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+	border: 2px solid #000;
+}
+
+.btn:hover {
+	background-color: #fff;
+	border: 2px solid black;
+	color: black;
+}
+
+/* Dark theme */
+.dark,
+.dark header {
+	background-color: #263238;
+	color: #fff;
+}
+
+.fa-sun {
+	position: absolute;
+	transform: translateY(-50px);
+	transition: all 400ms;
+}
+
+.dark .fa-sun {
+	transform: translateY(0px);
+}
+
+.fa-moon {
+	transform: translateY(0px);
+	transition: all 400ms;
+}
+
+.dark .fa-moon {
+	transform: translateY(-50px);
+}
+
+.dark .card {
+	background-color: #37474f;
+}
+
+.dark .card-image {
+	background-color: #273035;
+}
+
+.dark .subtitle {
+	color: #fff;
+}
+
+.dark .description {
+	color: #fff;
+}
+
+.dark .btn {
+	background-color: #fff;
+	color: black;
+	border: 2px solid #fff;
+}
+
+.dark .btn:hover {
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #fff;
+}
